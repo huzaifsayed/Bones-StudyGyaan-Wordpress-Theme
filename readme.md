@@ -15,5 +15,13 @@ License URI: http://sam.zoy.org/wtfpl/
 #### Helpful Link To Install Sass and Compass
 http://thesassway.com/beginner/getting-started-with-sass-and-compass
 
-#### Note: 
+After Runing Compass - Do Some Changes in ``` /library/scss/breakpoints/_base.scss ``` and see the effects on wordpress theme
 
+#### Command to start compass for development: 
+```
+compass watch ../theme-name/library/scss
+```
+
+#### Helpful links - Tutorial
+https://code.tutsplus.com/tutorials/making-a-theme-with-bones-getting-started--wp-26545
+https://www.youtube.com/watch?v=-mIU4Enn-dI
