@@ -1,4 +1,7 @@
 # Bones - Wordpress Starter Theme by StudyGyaan.com
+
+Live Demo - https://studygyaan.com/
+
 A Lightweight Wordpress Development Theme Developed by StudyGyaan.com
 
 Bones is designed to make the life of developers easier. It's built
