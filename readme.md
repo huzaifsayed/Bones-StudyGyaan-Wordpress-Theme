@@ -1,7 +1,10 @@
-# Bones
-A Lightweight Wordpress Development Theme
+# Bones - Wordpress Starter Theme by StudyGyaan.com
 
-Bones is designed to make the life of developers easier. It's built
+Live Demo - https://studygyaan.com/
+
+A Lightweight Wordpress Development Theme Developed by StudyGyaan.com
+
+Theme Developed using Bones Wordpress Starter Theme for StudyGyaan.com. Bones is designed to make the life of developers easier. It's built
 using HTML5 & has a strong semantic foundation.
 It's constantly growing so be sure to check back often if you are a
 frequent user. I'm always open to contribution. :)
@@ -11,28 +14,27 @@ http://themble.com/bones
 
 License: WTFPL
 License URI: http://sam.zoy.org/wtfpl/
-Are You Serious? Yes.
 
-#### Special Thanks to:
-Paul Irish & the HTML5 Boilerplate
-Yoast for some WP functions & optimization ideas
-Andrew Rogers for code optimization
-David Dellanave for speed & code optimization
-and several other developers. :)
+#### Helpful Link To Install Sass and Compass
+http://thesassway.com/beginner/getting-started-with-sass-and-compass
 
-#### Submit Bugs & or Fixes:
-https://github.com/eddiemachado/bones/issues
+After Runing Compass - Do Some Changes in ``` /library/scss/breakpoints/_base.scss ``` and see the effects on wordpress theme
 
-To view Release & Update Notes, read the CHANGELOG.md file in the main folder.
+#### Command to start compass for development: 
+```
+compass watch ../theme-name/library/scss
+```
 
-For more news and to see why my parents constantly ask me what I'm
-doing with my life, follow me on twitter: @eddiemachado
-
-## Helpful Tools & Links
-
-Yeoman generator to quickly install Bones Wordpress starter theme into your Wordpress theme folder
-by 0dp
-https://github.com/0dp/generator-wp-bones
+#### Helpful links - Tutorial
+https://code.tutsplus.com/tutorials/making-a-theme-with-bones-getting-started--wp-26545
+https://www.youtube.com/watch?v=-mIU4Enn-dI
 
 
+#### Theme Ready To install on Wordpress
+You can find a .zip file (Bones - StudyGyaan v.1.1 - Wordpress Ready.zip). Just Upload it to Wordpress Directly in Appearance -> Themes -> Add New -> Upload Theme
+
+<<<<<<< HEAD
 # Bones-StudyGyaan-Wordpress-Theme
+=======
+#### This theme is Pure and Not Extra Code/Credit Added. You can use it freely. It's a Premium Fastest Lightweight Wordpress Theme for Free with Zero Error(Check Console in Chrome).
+>>>>>>> 204fb08ace075e85b4df99fe7c79f7c54bfd5343
