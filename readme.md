@@ -35,3 +35,4 @@ by 0dp
 https://github.com/0dp/generator-wp-bones
 
 
+# Bones-StudyGyaan-Wordpress-Theme

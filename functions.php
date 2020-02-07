@@ -323,6 +323,3 @@ function the_post_sharer( $content ) {
 
 
 /* DON'T DELETE THIS CLOSING TAG */ ?>
-
-
-
