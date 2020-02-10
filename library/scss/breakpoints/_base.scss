@@ -487,20 +487,24 @@ POSTS & CONTENT STYLES
 			ul, ol, table, dl {}
 
 			ul, ol {
-
+				padding-left: 1.5em;
 				li {}
 
 			}
 
 			ul {
 
-				li {}
+				li {
+					list-style-type: square;
+				}
 
 			}
 
 			ol {
 
-				li {}
+				li {
+					list-style-type: lower-roman;
+				}
 
 			}
 
