@@ -63,8 +63,6 @@ Template Name: Full-Width Page Layout
 
             </main>
 
-            <?php get_sidebar(); ?>
-
     </div>
 
 </div>
