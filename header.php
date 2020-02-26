@@ -85,3 +85,35 @@
 				</div>
 
 			</header>
+
+			<?php  if( wp_is_mobile()){  ?>
+			<!-- mobile stuff goes here -->
+			mobile stuff goes here
+			<?php } else { ?>
+			<!-- desktop stuff goes here -->
+				<div id="front-widget" class="sidebar m-all cf" role="complementary">
+					<?php if ( is_active_sidebar( 'sidebar2' ) ) : ?>
+
+					<?php dynamic_sidebar( 'sidebar2' ); ?>
+
+					<?php endif; ?>
+
+				</div>
+			<?php  } ?>
+
+			<?php  if( wp_is_mobile()){  ?>
+			<!-- mobile stuff goes here -->
+			mobile stuff goes here
+			<?php } else { ?>
+			<!-- desktop stuff goes here -->
+				<div id="fix-bottom-widget">
+				
+					<?php if ( is_active_sidebar( 'sidebar3' ) ) : ?>
+						<div class="inner-fix-bottom-widget">
+					<?php dynamic_sidebar( 'sidebar3' ); ?>
+						</div>
+					<?php endif; ?>
+				
+				</div>
+			<?php  } ?>
+					

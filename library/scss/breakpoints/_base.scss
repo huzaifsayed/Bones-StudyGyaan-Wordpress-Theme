@@ -76,6 +76,21 @@ LAYOUT & GRID STYLES
 }
 
 /*********************
+Bottom Right Fix 
+*********************/
+.inner-fix-bottom-widget {
+	padding: 5px 10px;
+	border-radius: 4px;
+  }
+  
+#fix-bottom-widget {
+	position: fixed;
+	bottom: 10px;
+	right: 10px;
+}
+
+
+/*********************
 LINK STYLES
 *********************/
 
@@ -390,11 +405,20 @@ and more scalable.
 
 
 /*********************
+Front Widget STYLES
+*********************/
+#front-widget {
+	margin-top: 1.5em;
+	word-break: break-all;
+}
+
+/*********************
 POSTS & CONTENT STYLES
 *********************/
 
 #content {
 	margin-top: 1.5em;
+	display:block;
 }
 
 		.hentry {
