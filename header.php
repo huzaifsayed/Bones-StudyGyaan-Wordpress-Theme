@@ -88,10 +88,9 @@
 
 			<?php  if( wp_is_mobile()){  ?>
 			<!-- mobile stuff goes here -->
-			mobile stuff goes here
 			<?php } else { ?>
 			<!-- desktop stuff goes here -->
-				<div id="front-widget" class="sidebar m-all cf" role="complementary">
+				<div id="front-widget" class="wrap cf" role="complementary">
 					<?php if ( is_active_sidebar( 'sidebar2' ) ) : ?>
 
 					<?php dynamic_sidebar( 'sidebar2' ); ?>
@@ -103,7 +102,6 @@
 
 			<?php  if( wp_is_mobile()){  ?>
 			<!-- mobile stuff goes here -->
-			mobile stuff goes here
 			<?php } else { ?>
 			<!-- desktop stuff goes here -->
 				<div id="fix-bottom-widget">
