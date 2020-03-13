@@ -2,6 +2,8 @@
 
 Live Demo - https://studygyaan.com/
 
+### Download Theme - https://github.com/huzaifsayed/Bones-StudyGyaan-Wordpress-Theme/blob/master/Bones%20-%20StudyGyaan%20v.1.5%20-%20Wordpress%20Ready.zip
+
 A Lightweight Wordpress Development Theme Developed by StudyGyaan.com
 
 Theme Developed using Bones Wordpress Starter Theme for StudyGyaan.com. Bones is designed to make the life of developers easier. It's built
