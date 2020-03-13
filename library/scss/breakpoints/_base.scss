@@ -647,6 +647,12 @@ POSTS & CONTENT STYLES
 				overflow: auto;
 			}
 
+			code {
+				background-color: #eee;
+				border-radius: 3px;
+				padding: 0 3px;
+			}
+			
 			iframe{
 				max-width: 100%;
 				
@@ -1089,6 +1095,7 @@ SIDEBARS & ASIDES
 	.widgettitle {}
 
 	.widget {
+
 
 		ul {
 
