@@ -34,5 +34,4 @@ https://www.youtube.com/watch?v=-mIU4Enn-dI
 You can find a .zip file (Bones - StudyGyaan v.1.1 - Wordpress Ready.zip). Just Upload it to Wordpress Directly in Appearance -> Themes -> Add New -> Upload Theme
 
 # Bones-StudyGyaan-Wordpress-Theme
-=======
 #### This theme is Pure and Not Extra Code/Credit Added. You can use it freely. It's a Premium Fastest Lightweight Wordpress Theme for Free with Zero Error(Check Console in Chrome).
