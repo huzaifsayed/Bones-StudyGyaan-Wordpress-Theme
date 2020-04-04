@@ -341,5 +341,33 @@ function the_post_sharer( $content ) {
 //     echo basename($template);
 // }
 
+// Changing h3 to p tag
+function themeslug_commentform_title( $args ) {
+        
+  $args['title_reply_before'] = '<p id="reply-title" class="h3 comment-reply-title">';
+        $args['title_reply_after']  = '</p>';
+
+ return  $args;
+ 
+}
+add_filter( 'comment_form_defaults', 'themeslug_commentform_title' );
+
+// Writing Custom Post Sharer AddtoAny shortocde
+// Add Shortcode
+// The shortcode function
+function post_sharer_shortcode() { 
+ 
+  $site_url = get_template_directory_uri();;
+
+  // Advertisement code pasted inside a variable
+  // echo '<!-- AddToAny BEGIN --><div class="a2a_kit a2a_kit_size_32 a2a_default_style" data-a2a-url="'. $site_url .'" data-a2a-title="'. $site_title .'" id="my_centered_buttons"><a class="has-text-align-center a2a_button_facebook"></a><a class="has-text-align-center a2a_button_twitter"></a><a class="has-text-align-center a2a_button_pinterest"></a><a class="has-text-align-center a2a_button_linkedin"></a><a class="has-text-align-center a2a_button_telegram"></a><a class="has-text-align-center a2a_button_whatsapp"></a></div><script async="" src="'. $site_url .'/wp-content/themes/Bones%20-%20StudyGyaan/library/js/sharebuttons/sharebuttons.js"></script><!-- AddToAny END --><style type="text/css">#my_centered_buttons { display: flex; justify-content: center; }</style>';
+  // echo '<!-- AddToAny BEGIN --><div class="a2a_kit a2a_kit_size_32 a2a_default_style" id="my_centered_buttons"><a class="a2a_dd"></a><a class="a2a_button_facebook"></a><a class="a2a_button_twitter"></a><a class="a2a_button_pinterest"></a><a class="a2a_button_whatsapp"></a><a class="a2a_button_linkedin"></a><a class="a2a_button_telegram"></a></div><script async src="'. $site_url .'/library/js/sharebuttons/sharebuttons.js"></script><style type="text/css">#my_centered_buttons { display: flex; justify-content: center; }</style><!-- AddToAny END -->';
+  echo '<!-- AddToAny BEGIN --><div class="a2a_kit a2a_kit_size_32 a2a_default_style" id="my_centered_buttons"><a class="a2a_button_facebook"></a><a class="a2a_button_twitter"></a><a class="a2a_button_pinterest"></a><a class="a2a_button_whatsapp"></a><a class="a2a_button_linkedin"></a><a class="a2a_button_telegram"></a><a class="a2a_button_reddit"></a></div><script async src="'. $site_url .'/library/js/sharebuttons/sharebuttons.js"></script><style type="text/css">#my_centered_buttons { display: flex; justify-content: center; }</style><!-- AddToAny END -->';
+
+   
+  }
+// Register shortcode
+add_shortcode('post_sharer_code', 'post_sharer_shortcode'); 
 
 /* DON'T DELETE THIS CLOSING TAG */ ?>
+

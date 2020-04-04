@@ -512,14 +512,13 @@ POSTS & CONTENT STYLES
 
 			ul, ol {
 				padding-left: 1.5em;
-				li {}
 
 			}
 
 			ul {
 
 				li {
-					list-style-type: square;
+					list-style-type:disc;
 				}
 
 			}
@@ -527,7 +526,7 @@ POSTS & CONTENT STYLES
 			ol {
 
 				li {
-					list-style-type: lower-roman;
+					list-style-type:decimal;
 				}
 
 			}
@@ -539,8 +538,9 @@ POSTS & CONTENT STYLES
 
 				caption {
 					margin: 0 0 7px;
-					font-size: 0.75em;
+					font-size: 0.01em;
 					color: $meta-gray;
+					text-align: center;
 					text-transform: uppercase;
 					letter-spacing: 1px;
 				}
@@ -596,9 +596,47 @@ POSTS & CONTENT STYLES
 			}
 
 			img {
-				margin: 0 auto 1.5em auto;
+				margin: 0 auto 0 auto;
 				max-width: 100%;
 				height: auto;
+			}
+
+			.wp-block-image .aligncenter>figcaption{
+				display: block;
+				caption-side: bottom;
+			}
+			
+			.wp-block-image figcaption {
+				/* margin-top: .5em; */
+				margin-bottom: 0;
+				margin-top: 0;
+				text-align: center;
+				font-style: italic;
+				font-size: smaller;
+			}
+
+			// Table of Content 
+			.table-of-content:before {
+				content: "Table of Content";
+				color:'green'; 
+			  }
+			.table-of-content {
+				background: $light-gray;
+				font-size: 95%;
+				margin-bottom: 1em;
+				padding: 20px;
+				margin: 20px;
+				width: auto;
+			}
+
+			.table-of-content li, .table-of-content ul, .table-of-content ul li{
+				list-style: outside decimal none !important;
+				margin-left: 3em;
+			}
+			
+			.table-of-content a, a:visited {
+				color: $blue;
+				text-decoration: none;
 			}
 
 			/*
@@ -1030,6 +1068,11 @@ COMMENT FORM STYLES
 	@extend .cf;
 	padding: 1.5em;
 	border-top: 1px solid $light-gray;
+	input, textarea{
+		border: 1px solid #ccc;
+		border-radius: 4px;
+		background-color: #f8f8f8;
+	}
 }
 
 	#reply-title {
@@ -1048,6 +1091,7 @@ COMMENT FORM STYLES
 
 	.comment-form-comment {
 		margin: 1.5em 0 0.75em;
+		
 	}
 
 	.form-allowed-tags {
@@ -1094,8 +1138,12 @@ SIDEBARS & ASIDES
 
 	.widgettitle {}
 
+
+
 	.widget {
 
+		padding: 0 10px;
+		margin: 10px 0;
 
 		ul {
 
