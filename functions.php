@@ -369,5 +369,30 @@ function post_sharer_shortcode() {
 // Register shortcode
 add_shortcode('post_sharer_code', 'post_sharer_shortcode'); 
 
+// Remove URL Field from Comment form
+function wpb_disable_comment_url($fields) { 
+  unset($fields['url']);
+  return $fields;
+}
+add_filter('comment_form_default_fields','wpb_disable_comment_url');
+// End Remove URL Field from Comment form
+
+// Disable HTML in Comments
+function wpb_comment_post( $incoming_comment ) {
+  $incoming_comment['comment_content'] = htmlspecialchars($incoming_comment['comment_content']);
+  $incoming_comment['comment_content'] = str_replace( "'", '&apos;', $incoming_comment['comment_content'] );
+  return( $incoming_comment );
+  }
+  function wpb_comment_display( $comment_to_display ) {
+   $comment_to_display = str_replace( '&apos;', "'", $comment_to_display );
+   return $comment_to_display;
+}
+add_filter( 'preprocess_comment', 'wpb_comment_post', '', 1);
+add_filter( 'comment_text', 'wpb_comment_display', '', 1);
+add_filter( 'comment_text_rss', 'wpb_comment_display', '', 1);
+add_filter( 'comment_excerpt', 'wpb_comment_display', '', 1);
+remove_filter( 'comment_text', 'make_clickable', 9 );
+// ENd Disable HTML in Comments
+
 /* DON'T DELETE THIS CLOSING TAG */ ?>
 
