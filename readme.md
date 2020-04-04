@@ -1,8 +1,10 @@
 # Bones - Wordpress Starter Theme by StudyGyaan.com
 
-Live Demo - https://studygyaan.com/
+### Live Demo - https://studygyaan.com/
 
-#### [Download Theme](https://github.com/huzaifsayed/Bones-StudyGyaan-Wordpress-Theme/blob/master/Bones%20-%20StudyGyaan%20v.1.5%20-%20Wordpress%20Ready.zip)
+### [Download Theme](https://studygyaan.com/download-free-premium-wordpress-theme)
+
+### [Theme Documentation](https://studygyaan.com/download-free-premium-wordpress-theme)
 
 A Lightweight Wordpress Development Theme Developed by StudyGyaan.com
 
