@@ -394,5 +394,14 @@ add_filter( 'comment_excerpt', 'wpb_comment_display', '', 1);
 remove_filter( 'comment_text', 'make_clickable', 9 );
 // ENd Disable HTML in Comments
 
+// Comment error to same page
+function wpse_58613_comment_redirect( $location ) {
+  if ( isset( $_POST['my_redirect_to'] ) ) // Don't use "redirect_to", internal WP var
+      $location = $_POST['my_redirect_to'];
+
+  return $location;
+}
+
+add_filter( 'comment_post_redirect', 'wpse_58613_comment_redirect' );
 /* DON'T DELETE THIS CLOSING TAG */ ?>
 

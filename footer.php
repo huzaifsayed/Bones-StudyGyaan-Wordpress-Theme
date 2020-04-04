@@ -20,7 +20,7 @@
 
 					<p class="source-org copyright "> 
 						&copy; <?php echo date('Y'); ?> <?php bloginfo( 'name' ); ?>. 
-						Find This Theme on <a href="https://github.com/huzaifsayed/Bones-StudyGyaan-Wordpress-Theme">GitHub</a>.
+						Download <a target="_blank" href="https://studygyaan.com/download-free-premium-wordpress-theme">Theme</a>.
 						<div id="share-buttons" class="post-sharer">
 							<a id="facebook" target="_blank" href="https://www.facebook.com/ProfessionalCipher/" class="share-button facebook">Facebook</a>
 							<a id="twitter" target="_blank" href="https://twitter.com/studygyaan" class="share-button twitter">Twitter</a>
